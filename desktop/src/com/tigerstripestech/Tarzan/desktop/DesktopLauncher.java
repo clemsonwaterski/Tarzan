@@ -7,7 +7,7 @@ import com.tigerstripestech.Tarzan.ZBGame;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-        config.title = "ZombieBird";
+        config.title = "Tarzan";
         config.useGL30 = false;
         config.width = 272;
         config.height = 408;
