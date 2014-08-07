@@ -9,7 +9,7 @@ public class DesktopLauncher {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
         config.title = "Tarzan";
         config.useGL30 = false;
-        config.width = 272;
+        config.width = 273;
         config.height = 408;
 
 		new LwjglApplication(new ZBGame(), config);
