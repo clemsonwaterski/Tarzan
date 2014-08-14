@@ -154,18 +154,22 @@ public class GameRenderer {
 
         if (myWorld.isReady()) {
             // Draw shadow first
-            AssetLoader.shadow.draw(batcher, "Touch here", (136 / 2)
-                    - (53), 76);
+            AssetLoader.shadow.draw(batcher, "Touch here", (500 / 2)
+                    - (53), (gameHeight / 2));
             // Draw text
-            AssetLoader.font.draw(batcher, "Touch here", (136 / 2)
-                    - (53 - 1), 75);
+            AssetLoader.font.draw(batcher, "Touch here", (500 / 2)
+                    - (53 - 1), ((gameHeight / 2) - 1));
         } else {
             if (myWorld.isGameOver()) {
-                AssetLoader.shadow.draw(batcher, "Game Over", 25, 56);
-                AssetLoader.font.draw(batcher, "Game Over", 24, 55);
+                AssetLoader.shadow.draw(batcher, "Game Over", (500 / 2)
+                        - (53), ((gameHeight / 2) - 25));
+                AssetLoader.font.draw(batcher, "Game Over", (500 / 2)
+                        - (53 - 1), ((gameHeight / 2) - 1 - 25));
 
-                AssetLoader.shadow.draw(batcher, "Try again?", 23, 76);
-                AssetLoader.font.draw(batcher, "Try again?", 24, 75);
+                AssetLoader.shadow.draw(batcher, "Try again?", (500 / 2)
+                        - (53), (gameHeight / 2));
+                AssetLoader.font.draw(batcher, "Try again?", (500 / 2)
+                        - (53 - 1), ((gameHeight / 2) - 1));
             }
 
             // Convert integer into String

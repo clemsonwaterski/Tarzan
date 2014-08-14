@@ -39,7 +39,7 @@ public class GameWorld {
         // the grass should start 66 pixels below the midPointY
         this.scroller = new ScrollHandler(this, midPointY + 66);
 
-        ground = new Rectangle(0, midPointY + 66, 136, 11);
+        ground = new Rectangle(0, midPointY + 266, 136, 11);
 
 
     }

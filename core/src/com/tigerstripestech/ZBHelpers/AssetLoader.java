@@ -37,9 +37,9 @@ public class AssetLoader {
 
         // load font
         font = new BitmapFont(Gdx.files.internal("data/text.fnt"));
-        font.setScale(.25f, -.25f);
+        font.setScale(.75f, -.75f);
         shadow = new BitmapFont(Gdx.files.internal("data/shadow.fnt"));
-        shadow.setScale(.25f, -.25f);
+        shadow.setScale(.75f, -.75f);
 
 
         bg = new TextureRegion(texture, 0, 0, 136, 43);
